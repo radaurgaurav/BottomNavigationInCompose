@@ -9,7 +9,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.sp
@@ -19,13 +18,13 @@ fun FirstScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = R.color.teal_700))
+            .background(Color.White)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
             text = "First View",
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             textAlign = TextAlign.Center,
             fontSize = 25.sp
@@ -39,13 +38,13 @@ fun SecondScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = R.color.teal_700))
+            .background(Color.White)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
             text = "Second View",
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             textAlign = TextAlign.Center,
             fontSize = 25.sp
@@ -58,13 +57,13 @@ fun ThirdScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = R.color.teal_700))
+            .background(Color.White)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
             text = "Third View",
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             textAlign = TextAlign.Center,
             fontSize = 25.sp
@@ -77,13 +76,13 @@ fun FourthScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = R.color.teal_700))
+            .background(Color.White)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
             text = "Fourth View",
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             textAlign = TextAlign.Center,
             fontSize = 25.sp
@@ -96,13 +95,13 @@ fun FifthScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(colorResource(id = R.color.teal_700))
+            .background(Color.White)
             .wrapContentSize(Alignment.Center)
     ) {
         Text(
             text = "Fifth View",
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = Color.Black,
             modifier = Modifier.align(Alignment.CenterHorizontally),
             textAlign = TextAlign.Center,
             fontSize = 25.sp

@@ -10,10 +10,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
-import androidx.navigation.NavHost
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -36,17 +34,9 @@ fun MainScreen() {
         topBar = { TopBar() },
         bottomBar = { BottomNavigationBar(navController) }
     ) {
-        Navigation(navController = navController,BottomNavigationItem.One.route)
+        Navigation(navController = navController, BottomNavigationItem.One.route)
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-fun MainScreenPreview() {
-    MainScreen()
-}
-
-
 
 @Composable
 fun TopBar() {
@@ -55,12 +45,6 @@ fun TopBar() {
         backgroundColor = colorResource(id = R.color.teal_700),
         contentColor = Color.White
     )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun TopBarPreview() {
-    TopBar()
 }
 
 @Composable
@@ -110,27 +94,22 @@ fun BottomNavigationBar(navController: NavController) {
 
 @Composable
 fun Navigation(navController: NavHostController, route: String) {
-  NavHost(navController = navController, startDestination = route) {
-      composable(BottomNavigationItem.One.route){
-          FirstScreen()
-      }
-      composable(BottomNavigationItem.Two.route){
-          SecondScreen()
-      }
-      composable(BottomNavigationItem.Three.route){
-          ThirdScreen()
-      }
-      composable(BottomNavigationItem.Four.route){
-          FourthScreen()
-      }
-      composable(BottomNavigationItem.Five.route){
-          FirstScreen()
-      }
+    NavHost(navController = navController, startDestination = route) {
+        composable(BottomNavigationItem.One.route) {
+            FirstScreen()
+        }
+        composable(BottomNavigationItem.Two.route) {
+            SecondScreen()
+        }
+        composable(BottomNavigationItem.Three.route) {
+            ThirdScreen()
+        }
+        composable(BottomNavigationItem.Four.route) {
+            FourthScreen()
+        }
+        composable(BottomNavigationItem.Five.route) {
+            FifthScreen()
+        }
 
-  }
-}
-@Preview(showBackground = true)
-@Composable
-fun BottomNavigationBarPreview() {
-    // BottomNavigationBar()
+    }
 }
